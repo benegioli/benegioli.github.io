@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Where To Eat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="nav-bar">
+    <a class="active" href="index.html">Home</a>
+    <a href="places-to-visit.html">Places To Visit</a>
+    <a href="where-to-eat.html">Where To Eat</a>
+    <a href="must-do.html"> Must Do</a>
+    <a href="curiosities.html"> Curiosities</a>
+    <br>
+    <br>
+</div>
+
+ <h3> These Are The Best Places Where To Eat In Florence: </h3>
+<ul>
+    <li><a href="#gelato">Gelato Places</a></li>
+    <li><a href="#cheap-meals"> Affordable Meals</a></li>
+    <li><a href="#romantic-dinners"> Romantic Dinners</a></li>
+</ul>
+
+
+<div class="gelato-class"> <h4 id="gelato">Gelato:</h4>
+</div>
+
+<div class="cheap-meals">
+    <h4 id="cheap-meals">Affordable Meals:</h4>
+</div>
+
+<div class="romantic-dinners">
+    <h4 id="romantic-dinners">Romantic Dinners:</h4>
+</div>
+
+</body>
+</html>
