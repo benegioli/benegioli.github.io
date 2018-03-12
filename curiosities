@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curiosities</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+<div class="nav-bar">
+    <a class="active" href="index.html">Home</a>
+    <a href="places-to-visit.html">Places To Visit</a>
+    <a href="where-to-eat.html">Where To Eat</a>
+    <a href="must-do.html"> Must Do</a>
+    <a href="curiosities.html"> Curiosities</a>
+    <br>
+    <br>
+</div>
+<h3> Here Are Some Cool Fact About Florence:</h3>
+<h3>contents:</h3>
+<a href="#music">Florence In Music</a>
+<a href="#people-from-florence">People From Florence</a>
+<a href="#movies">Florence In Movies</a>
+
+
+
+<div class="music">
+    La porti un bacione a firenze
+</div>
+
+<div class="people-from-florence"> 
+    dante + da vinci piu o meno
+</div>
+
+<div class="movies"> 
+    forse era nel silenzio degli innocenti
+</div>
+
+
+1.: It is the best city
+</body>
+</html>
