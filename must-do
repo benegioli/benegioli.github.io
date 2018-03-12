@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Must Do</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="nav-bar">
+    <a class="active" href="index.html">Home</a>
+    <a href="places-to-visit.html">Places To Visit</a>
+    <a href="where-to-eat.html">Where To Eat</a>
+    <a href="must-do.html"> Must Do</a>
+    <a href="curiosities.html"> Curiosities</a>
+    <br>
+    <br>
+</div>
+
+<h3> Some Activities That You Can't Miss: </h3>
+
+</body>
+</html>
