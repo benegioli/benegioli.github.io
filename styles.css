@@ -1,9 +1,14 @@
 
-h4, h3 {font-style: italic;
-font-size: 1.3em;}
+h4{font-style: italic;
+    color: #6d2bd6;
+/*font-size: 1.3em;*/}
 
 html {
     box-sizing: border-box;
+    padding: 20px;
+    margin: 15px;
+    /*border: 2px outset rgba(109, 43, 214, 0.68);*/
+
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -16,24 +21,23 @@ html {
     text-decoration: none;
     display: block;
     overflow: hidden;
-    width: 20%;
+    width: 16%;
     box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
     padding: 10px 10px 10px 10px;
     color: #ffffff;
     float: left;
+    align: center;
 
     /*border-radius: 3px;*/
 }
-.nav-bar {top: 0;
-    z-index: 100;
-    position: fixed;
-    border-top: 0;
-    width: 100%;}
+.nav-bar {position: fixed;
+    width: 100%;
+    top: 0; }
 
 
 
 .nav-bar a:hover {
-    text-decoration: underline red solid;
+    text-decoration: underline red solid;}
 
 
     /* background-color: rgb(255, 244, 232);
@@ -42,14 +46,13 @@ color: rgb(0, 0, 0);
 poi copia lo hover con la linea rossa che appare sotto al testo che
 viene selezionato perche non solo e figo e ci sta con il rosso, ma e anche per
 liberassi del hover grigino che non sa veramente di nulla*/
-}
+
 
 .nav-bar a.active {
     background-color: rgb(255, 0, 16);
     color: #000000;  }
 
-
-
+#guess_form, #guess_display, #guess_status, #guess_input {padding: 10px;}
 
 /*
  .nav-bar a:hover {
@@ -81,4 +84,7 @@ liberassi del hover grigino che non sa veramente di nulla*/
 body {background-color: #cae6f5;
     line-height: 1.5em;}
 
-h3 {color: #6d2bd6; }
+h3 {color: #6d2bd6;
+    font-style: italic;
+    font-size: 1.2em;}
+
