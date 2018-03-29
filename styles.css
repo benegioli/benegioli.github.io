@@ -32,8 +32,7 @@ html {
 }
 .nav-bar {position: fixed;
     width: 100%;
-    top: 0;
-    transition: top 0.3s; }
+    top: 0; }
 
 
 
