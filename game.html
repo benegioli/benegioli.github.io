@@ -85,9 +85,9 @@
         event.preventDefault();
         var foundLetter = checkLetterGuess(guessInput.value);
         if (foundLetter) {
-            guessStatus.innerHTML = "Yay you found one!";
+            guessStatus.innerHTML = "Yay you got one :)";
         } else {
-            guessStatus.innerHTML = "Wroooong";
+            guessStatus.innerHTML = "Nope, try again :)";
         }
         if (hasWon()) {
             guessStatus.innerHTML += "WOOO WINNER WINNER!";
