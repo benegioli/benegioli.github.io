@@ -1,11 +1,11 @@
 
 h4{font-style: italic;
     color: #6d2bd6;
-/*font-size: 1.3em;*/}
+    /*font-size: 1.3em;*/}
 
 html {
     box-sizing: border-box;
-    padding: 20px;
+    padding: 30px;
     margin: 15px;
     /*border: 2px outset rgba(109, 43, 214, 0.68);*/
 
@@ -21,7 +21,7 @@ html {
     text-decoration: none;
     display: block;
     overflow: hidden;
-    width: 16%;
+    width: 15%;
     box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
     padding: 10px 10px 10px 10px;
     color: #ffffff;
@@ -40,7 +40,7 @@ html {
     text-decoration: underline red solid;}
 
 
-    /* background-color: rgb(255, 244, 232);
+/* background-color: rgb(255, 244, 232);
 color: rgb(0, 0, 0);
 
 poi copia lo hover con la linea rossa che appare sotto al testo che
