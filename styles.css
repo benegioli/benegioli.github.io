@@ -10,9 +10,11 @@ h4{font-style: italic;
     /*border: 2px outset rgba(109, 43, 214, 0.68); */
 
 }
+
+
 *, *:before, *:after {
-    box-sizing: inherit;
-} /* all of this makes it so that the width of something doesnt account for padding */
+   box-sizing: inherit;
+}/*all of this makes it so that the width of something doesnt account for padding */
 
 
 #guess_form, #guess_display, #guess_status, #guess_input {padding: 10px;}
@@ -39,10 +41,10 @@ h4{font-style: italic;
 .nav-bar a {
     list-style-type: none;
     background-color: rgb(124, 58, 218);
-    margin: 0 0 18px 0;
+ /*   margin: 0 0 0 0; */
     text-decoration: none;
     overflow: visible;
-    width: 14.6%;
+    width: 18%;
     box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
     padding: 10px 10px 10px 10px;
     color: #ffffff;
@@ -95,3 +97,5 @@ h3 {color: #6d2bd6;
   font-size: 1.2em;}
 
 #hitcounter {text-align: center;  }
+
+
