@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         span {background: white;}
+       #map {
+        height: 300px;
+        width: 70%;
+       }
     </style>
 </head>
 <body>
@@ -27,7 +31,201 @@
         <li><a href="#sushi">Sushi</a></li>
     </ul>
 
+<br>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
 
+        var map = new google.maps.Map(mapDiv, {
+          zoom: 14,
+          center: {lat:43.769609, lng:11.246675},
+          gestureHandling: 'greedy'
+        });
+map.setMapTypeId('hybrid');
+var coffee = "http://files.softicons.com/download/object-icons/kappu-icons-by-dunedhel/png/48/Coffee%20(hot).png";
+var tea = 'http://files.softicons.com/download/food-drinks-icons/coffee-cup-icons-by-macintex/png/48x48/Coffee-Cup.png'
+var flower = 'http://files.softicons.com/download/business-icons/pink-ribbon-shopping-icons-by-dapino/png/48x48/flower.png'
+var ball = 'http://files.softicons.com/download/sport-icons/vista-sport-icons-by-icons-land/png/32x32/Volleyball_Ball.png'
+var gelato = 'http://files.softicons.com/download/food-drinks-icons/free-food-icons-by-daily-overview/png/48x48/ice-cream.png'
+var hotdog = 'http://files.softicons.com/download/food-drinks-icons/free-food-icons-by-daily-overview/png/48x48/sandwich.png'
+var sushi = 'http://files.softicons.com/download/food-drinks-icons/cubes-icons-by-klukeart/png/48x48/Box_24.png'
+var champagne = 'http://files.softicons.com/download/holidays-icons/new-year-icons-pack-by-you-the-designer/png/48x48/champagne_bottle.png'
+
+        var marker1 = new google.maps.Marker({
+          position: {lat:43.769609, lng:11.246675},
+          map: map,
+          icon: gelato
+        });
+        var info1 = new google.maps.InfoWindow({
+          content: '<strong><em>La Carraia<em></strong>'
+          
+        });
+        marker1.addListener('click', function() {
+          info1.open(map, marker1);
+        });
+
+        var marker2 = new google.maps.Marker({
+          position: {lat:43.769931, lng:11.260091},
+          map: map,
+          icon: gelato
+        });
+        var info2 = new google.maps.InfoWindow({
+          content: '<strong><em>Ih Vivoli<em></strong>'
+        });
+        marker2.addListener('click', function() {
+          info2.open(map, marker2);
+        });      
+
+        var marker3 = new google.maps.Marker({
+          position: {lat:43.767155, lng:11.250681},
+          map: map,
+          icon: gelato
+        });
+        var info3 = new google.maps.InfoWindow({
+          content: '<strong><em>Piazza Della Passera lol<em></strong>'
+        });
+        marker3.addListener('click', function() {
+          info3.open(map, marker3);
+        });
+
+        var marker4 = new google.maps.Marker({
+          position: {lat:43.750434, lng:11.236250},
+          map: map,
+          icon: gelato
+        });
+        var info4 = new google.maps.InfoWindow({
+          content: '<strong><em>L Isola<em></strong>'
+        });
+        marker4.addListener('click', function() {
+          info4.open(map, marker4);
+        });
+
+        var marker5 = new google.maps.Marker({
+          position: {lat:43.770446, lng:11.270291},
+          map: map,
+          icon: gelato
+        });
+        var info5 = new google.maps.InfoWindow({
+          content: '<strong><em>De Medici<em></strong>'
+        });
+        marker5.addListener('click', function() {
+          info5.open(map, marker5);
+        });
+
+        var marker6 = new google.maps.Marker({
+          position: {lat:43.773248, lng:11.257913},
+          map: map,
+          icon: hotdog
+        });
+        var info6 = new google.maps.InfoWindow({
+          content: '<strong><em>Panini Toscani<em></strong>'
+        });
+        marker6.addListener('click', function() {
+          info6.open(map, marker6);
+        });
+
+        var marker7 = new google.maps.Marker({
+          position: {lat:43.776994, lng:11.260701},
+          map: map,
+          icon: hotdog
+        });
+        var info7 = new google.maps.InfoWindow({
+          content: '<strong><em>Un Caffe <em></strong>'
+        });
+        marker7.addListener('click', function() {
+          info7.open(map, marker7);
+        });   
+
+        var marker8 = new google.maps.Marker({
+          position: {lat:43.770525, lng:11.255694},
+          map: map,
+          icon: hotdog
+        });
+        var info8 = new google.maps.InfoWindow({
+          content: '<strong><em>i Girone De Ghiotti<em></strong>'
+        });
+        marker8.addListener('click', function() {
+          info8.open(map, marker8);
+        });
+
+        var marker9 = new google.maps.Marker({
+          position: {lat:43.768728, lng:11.252878},
+          map: map,
+          icon: champagne
+        });
+        var info9 = new google.maps.InfoWindow({
+          content: '<strong><em>Caffe dell Oro<em></strong>'
+        });
+        marker9.addListener('click', function() {
+          info9.open(map, marker9);
+        });     
+
+        var marker10 = new google.maps.Marker({
+          position: {lat:43.777481, lng:11.255292},
+          map: map,
+          icon: champagne
+        });
+        var info10 = new google.maps.InfoWindow({
+          content: '<strong><em>Il vezzo<em></strong>'
+        });
+        marker10.addListener('click', function() {
+          info10.open(map, marker10);
+        });
+
+        var marker11 = new google.maps.Marker({
+          position: {lat:43.768215, lng:11.246087},
+          map: map,
+          icon: champagne
+        });
+        var info11 = new google.maps.InfoWindow({
+          content: '<marquee><strong><em>Cuculia<em></strong></marquee>'
+        });
+        marker11.addListener('click', function() {
+          info11.open(map, marker11);
+        });
+
+        var marker12 = new google.maps.Marker({
+          position: {lat:43.769574, lng:11.264542},
+          map: map,
+          icon: sushi
+        });
+        var info12 = new google.maps.InfoWindow({
+          content: '<marquee><strong><em>Sushi Aurora <em></strong></marquee>'
+        });
+        marker12.addListener('click', function() {
+          info12.open(map, marker12);
+        });
+
+        var marker13 = new google.maps.Marker({
+          position: {lat:43.769179, lng:11.246148},
+          map: map,
+          icon: sushi
+        });
+        var info13 = new google.maps.InfoWindow({
+          content: '<marquee><strong><em>Momoyama <em></strong></marquee>'
+        });
+        marker13.addListener('click', function() {
+          info13.open(map, marker13);
+        });
+
+    /*    var marker14 = new google.maps.Marker({
+          position: {lat:43.768215, lng:11.246087},
+          map: map,
+          icon: champagne
+        });
+        var info14 = new google.maps.InfoWindow({
+          content: '<marquee><strong><em>Cuculia<em></strong></marquee>'
+        });
+        marker14.addListener('click', function() {
+          info14.open(map, marker14);
+        }); */
+         } 
+
+        </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrSAqX0DuI-ZA3xrvnSZ_atK5GvXFelQQ&callback=initMap">
+    </script> <br>
     <div class="gelato-class"> <h4 id="gelato">Gelato:</h4>
         <img src="https://s-media-cache-ak0.pinimg.com/originals/2e/c1/14/2ec114efc76439996948530228e8406e.jpg" height="150" alt="a cup of gelato with the Rano in the background"> </li>
         <ul>
