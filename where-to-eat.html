@@ -5,7 +5,7 @@
     <title>Where To Eat</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        span {background: white;}
+        #yn {background: white;}
         #map {
             height: 300px;
             width: 70%;
@@ -35,6 +35,8 @@
     <div id="map"></div>
     <script>
         function initMap() {
+
+
             var mapDiv = document.getElementById('map');
             var map = new google.maps.Map(mapDiv, {
                 zoom: 14,
@@ -56,7 +58,7 @@
                 icon: gelato
             });
             var info1 = new google.maps.InfoWindow({
-                content: '<strong><em>La Carraia<em></strong>'
+                content: '<marquee><strong><em>La Carraia<em></strong></marquee>'
 
             });
             marker1.addListener('click', function() {
@@ -68,7 +70,7 @@
                 icon: gelato
             });
             var info2 = new google.maps.InfoWindow({
-                content: '<strong><em>Ih Vivoli<em></strong>'
+                content: '<marquee><strong><em>Ih Vivoli<em></strong></marquee>'
             });
             marker2.addListener('click', function() {
                 info2.open(map, marker2);
@@ -79,7 +81,7 @@
                 icon: gelato
             });
             var info3 = new google.maps.InfoWindow({
-                content: '<strong><em>Piazza Della Passera lol<em></strong>'
+                content: '<marquee><strong><em>Piazza Della Passera lol<em></strong></marquee>'
             });
             marker3.addListener('click', function() {
                 info3.open(map, marker3);
@@ -90,7 +92,7 @@
                 icon: gelato
             });
             var info4 = new google.maps.InfoWindow({
-                content: '<strong><em>L Isola<em></strong>'
+                content: '<marquee><strong><em>L Isola<em></strong></marquee>'
             });
             marker4.addListener('click', function() {
                 info4.open(map, marker4);
@@ -101,7 +103,7 @@
                 icon: gelato
             });
             var info5 = new google.maps.InfoWindow({
-                content: '<strong><em>De Medici<em></strong>'
+                content: '<marquee><strong><em>De Medici<em></strong></marquee>'
             });
             marker5.addListener('click', function() {
                 info5.open(map, marker5);
@@ -112,7 +114,7 @@
                 icon: hotdog
             });
             var info6 = new google.maps.InfoWindow({
-                content: '<strong><em>Panini Toscani<em></strong>'
+                content: '<marquee><strong><em>Panini Toscani<em></strong></marquee>'
             });
             marker6.addListener('click', function() {
                 info6.open(map, marker6);
@@ -123,7 +125,7 @@
                 icon: hotdog
             });
             var info7 = new google.maps.InfoWindow({
-                content: '<strong><em>Un Caffe <em></strong>'
+                content: '<marquee><strong><em>Un Caffe <em></strong></marquee>'
             });
             marker7.addListener('click', function() {
                 info7.open(map, marker7);
@@ -134,7 +136,7 @@
                 icon: hotdog
             });
             var info8 = new google.maps.InfoWindow({
-                content: '<strong><em>i Girone De Ghiotti<em></strong>'
+                content: '<marquee><strong><em>i Girone De Ghiotti<em></strong></marquee>'
             });
             marker8.addListener('click', function() {
                 info8.open(map, marker8);
@@ -145,7 +147,7 @@
                 icon: champagne
             });
             var info9 = new google.maps.InfoWindow({
-                content: '<strong><em>Caffe dell Oro<em></strong>'
+                content: '<marquee><strong><em>Caffe dell Oro<em></strong></marquee>'
             });
             marker9.addListener('click', function() {
                 info9.open(map, marker9);
@@ -156,7 +158,7 @@
                 icon: champagne
             });
             var info10 = new google.maps.InfoWindow({
-                content: '<strong><em>Il vezzo<em></strong>'
+                content: '<marquee><strong><em>Il vezzo<em></strong></marquee>'
             });
             marker10.addListener('click', function() {
                 info10.open(map, marker10);
@@ -214,7 +216,7 @@
         <img src="https://s-media-cache-ak0.pinimg.com/originals/2e/c1/14/2ec114efc76439996948530228e8406e.jpg" height="150" alt="a cup of gelato with the Rano in the background"> </li>
         <ul>
             <li><a href="https://www.google.com/maps/place/Gelateria+La+Carraia/@43.7696107,11.244476,17z/data=!3m1!4b1!4m5!3m4!1s0x132a56ab5fc3c57d:0xb1b312c28b2057b3!8m2!3d43.7696107!4d11.2466647" target="_blank"> La Carraia</a> is a gift from the Gods.
-                No matter what flavors you like, order <span>yogurt&nutella</span>. I would literally sell my firstborn if it could get me a gelato there.
+                No matter what flavors you like, order ,<span id="yn">yogurt&nutella</span>. I would literally sell my firstborn if it could get me a gelato there.
                 I'm only half joking, it's <em>that</em> good. It's also within a walking distance from Ponte Vecchio, so like, walk there. <br>
             <li><a href="https://www.google.com/maps/place/Vivoli/@43.769939,11.2578952,17z/data=!3m1!4b1!4m5!3m4!1s0x132a56a99d0ea983:0xadede9b0c2fee0b3!8m2!3d43.7699351!4d11.2600892" target="_blank"> Vivoli</a> is also reaaally good, and it's been open for many years,
                 my parents used to go there when  they were young, so it's a part of history as well.</li>
