@@ -1,4 +1,12 @@
 
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}/*all of this makes it so that the width of something doesnt account for padding */
+
 h4{font-style: italic;
     color: #6d2bd6;
     /*font-size: 1.3em;*/}
@@ -12,17 +20,12 @@ h4{font-style: italic;
 }
 
 
-*, *:before, *:after {
-   box-sizing: inherit;
-}/*all of this makes it so that the width of something doesnt account for padding */
-
-
 #guess_form, #guess_display, #guess_status, #guess_input {padding: 10px;}
 
 .footer {
     bottom: 4px;
     width: 100%;
-    text-align: center;
+    text-align: center; /* questo e' quello che lo mette davvero al centro, tutti gli altri sono a caso */
     /*float: bottom;
     position: absolute;
     background: pink;
@@ -31,11 +34,11 @@ h4{font-style: italic;
     right: 0;*/  }
 
 
-.nav-bar {position: sticky;
-    width: 100%;
-    overflow: visible;
-    text-align:center;
 
+.nav-bar {position: sticky;
+   /* width: 100%; */
+    overflow: visible;
+    text-align:center; /* ?? non so perche' non lo faccia :( */
     top: 0;  }
 
 .nav-bar a {
@@ -44,13 +47,13 @@ h4{font-style: italic;
  /*   margin: 0 0 0 0; */
     text-decoration: none;
     overflow: visible;
-    width: 17%;
+    width: 20%;
     box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
     padding: 10px 10px 10px 10px;
     color: #ffffff;
     float: left;
     border-radius: 2px;
-    text-align: center;
+  /*  text-align: center; */
 }
 
 .nav-bar a.active {
@@ -63,7 +66,7 @@ h4{font-style: italic;
     height: 30px;
     padding: 20px;
     position: relative;
-    text-align: center;
+    /*  text-align: center; */
    /* width: 30px;*/}
 
 .footer a, .nav-bar a {
@@ -72,10 +75,11 @@ h4{font-style: italic;
     transition: .25s ease-in;
 }
 
-.footer p {float:left;
-    width:100%;
-    text-align:center; }
-
+.footer p {
+    float: left;
+    width: 100%;
+    /*  text-align: center; */
+}
 
 .footer a:hover, .nav-bar a:hover {
     transform: translateY(-4px);
@@ -83,9 +87,7 @@ h4{font-style: italic;
     /* 0 6px 8px rgba(0,0,0,0.05),
     0 24px 24px rgba(0,0,0,0.05), */
     0 10px 10px rgba(146, 66, 253, 0.4), 0 12px 12px rgba(238, 0, 14, 0.87);
-
-    /*0 64px 128px rgba(0,0,0,0.15), 0 86px 8px 6px;
-    */
+    /*0 64px 128px rgba(0,0,0,0.15), 0 86px 8px 6px;*/
     }
 
 
@@ -95,6 +97,8 @@ body {background-color: #cae6f5;
 h3 {color: #6d2bd6;
   font-style: italic;
   font-size: 1.2em;}
+
+
 
 #hitcounter {text-align: center;  }
 
