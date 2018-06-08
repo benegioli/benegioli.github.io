@@ -16,9 +16,7 @@ h4{font-style: italic;
     padding: 50px;
     margin: 15px;
     /*border: 2px outset rgba(109, 43, 214, 0.68); */
-
 }
-
 
 #guess_form, #guess_display, #guess_status, #guess_input {padding: 10px;}
 
@@ -33,13 +31,12 @@ h4{font-style: italic;
     align: center;
     right: 0;*/  }
 
-
-
 .nav-bar {position: sticky;
    /* width: 100%; */
     overflow: visible;
     text-align:center; /* ?? non so perche' non lo faccia :( */
-    top: 0;  }
+    top: 0;
+    z-index: 1}
 
 .nav-bar a {
     list-style-type: none;
@@ -47,7 +44,7 @@ h4{font-style: italic;
  /*   margin: 0 0 0 0; */
     text-decoration: none;
     overflow: visible;
-    width: 16.6%;
+    width: 16.667%;
     box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
     padding: 10px 10px 10px 10px;
     color: #ffffff;
@@ -59,7 +56,6 @@ h4{font-style: italic;
 .nav-bar a.active {
     background-color: rgb(255, 0, 16);
     color: #000000;  }
-
 
 .footer a {/* border-bottom: 0px solid rgba(255, 86, 197, 0.95); */
     border-radius: 4px;
@@ -98,8 +94,10 @@ h3 {color: #6d2bd6;
   font-style: italic;
   font-size: 1.2em;}
 
-
-
 #hitcounter {text-align: center;  }
+
+.map {z-index:2}
+
+
 
 
