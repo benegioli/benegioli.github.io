@@ -98,6 +98,20 @@ h3 {color: #6d2bd6;
 
 .map {z-index:2}
 
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+
+.progress-bar {
+    height: 8px;
+    background: rgba(238, 0, 14, 0.87);
+    width: 0%;
+}
 
 
 
