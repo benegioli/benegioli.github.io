@@ -9,16 +9,31 @@
     </style>
 </head>
 <body>
+
 <div class="nav-bar">
     <a class="active" href="index.html">Home     <img src="https://78.media.tumblr.com/84d37feb6eb1701ffb3199fa99c04c64/tumblr_p74rfqc2P31vgxtsho1_1280.png" height="16px"> </a>
     <a href="places-to-visit.html">Places To Visit</a>
     <a href="where-to-eat.html">Where To Eat</a>
     <a href="must-do.html"> Must Do</a>
     <a href="curiosities.html"> Curiosities</a>
-    <a href="https://suggestions--benedetta.repl.co/"> Suggestions </a>
-
+    <a href="suggestions.html"> Suggestions</a>
     <!--   <a href="game.html">(Game)</a> -->
 </div>
+<div class="header">
+
+    <div class="progress-bar" id="myBar"></div>
+</div>
+<script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+
+    function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+    }
+</script>
 <div class="main">
 
     <!--<img src="http://www.salonerestaurofirenze.com/restauro/2018/wp-content/uploads/sites/11/2016/02/firenze-panorama-grande.jpg" width="100%" alt="a panoramic of florence">-->
@@ -44,7 +59,7 @@
 
     <h4>Now</h4>
     Adesso Firenze l'é una figata, soprattutto perché ce so' i' miei amici e la mi' famiglia, peró anche in generale é proprio carina, c'é sempre roba da fare
-    e se fossi una persona acculturata sono sicura che ci sarebbero anche un sacco di opportinutá per imparare cose nuove; peccato che a me piaccia (<em>guarda lí che bel congiuntivo che piazzo proprio bene, alche che perosna poco acculturata, qui si fa invidia a Dante</em>) stare sul divano
+    e se fossi una persona acculturata sono sicura che ci sarebbero anche un sacco di opportinutá per imparare cose nuove; peccato che a me piaccia (<em>guarda lí che bel congiuntivo che piazzo proprio bene, alche che persona poco acculturata, qui si fa invidia a Dante</em>) stare sul divano
     a casa mia o al massimo sul divano a casa dei miei amici ¯\_(ツ)_/¯. Anche qui come prima c'ho un po' di dati che non voglio cancellarte perché c'ho lavorato a
     tradurli, quindi ora enjoy the rest. <br>
     Now Florence, or in italian <em> Firenze </em> is the capital city of Tuscany, it has more than 380,000 citizens, and <strong>over 9,000 </strong> million tourists every year. <br>
@@ -64,7 +79,7 @@
         <a class="active" href="https://www.instagram.com/benehamoltafantasia/" target="_blank"><img src="https://seeklogo.com/images/I/instagram-new-2016-glyph-logo-84CB825424-seeklogo.com.png" height="20px"></a>
         <a href="https://www.facebook.com/bene.gioli" target="_blank"><img src="https://cdn1.iconfinder.com/data/icons/capsocial/500/facebook2-512.png" height="20px"></a>
         <a href="https://www.snapchat.com/add/benegioli" target="_blank"><img src="https://seeklogo.com/images/S/snapchat-ghost-logo-B618EE0704-seeklogo.com.png" height="20px"></a>
-      <!--  <a href="https://benegioli.github.io/places-to-visit.html" target="_blank"><img src="https://missiondisrupt.com/wp-content/themes/md/images/twitter-logo.png" height="20px"></a> -->
+        <a href="https://benegioli.github.io/places-to-visit.html" target="_blank"><img src="https://missiondisrupt.com/wp-content/themes/md/images/twitter-logo.png" height="20px"></a>
         <a href="https://github.com/benegioli" target="_blank"> <img src="https://raw.githubusercontent.com/NLDev/GitHub-Commit-Streak/master/.img/git.png" height="20px"> </a>
     </div>
 </div>
