@@ -109,7 +109,7 @@ h3 {color: #6d2bd6;
 
 .progress-bar {
     height: 8px;
-    background: rgba(238, 0, 14, 0.87);
+ <!--   background: rgba(238, 0, 14, 0.87); -->
     width: 0%;
 }
 
