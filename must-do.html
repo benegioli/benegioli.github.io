@@ -15,6 +15,20 @@
     <a href="https://suggestions--benedetta.repl.co/"> Suggestions </a>
  <!--   <a href="game.html">(Game)</a> -->
 </div>
+<div class="header">
+
+    <div class="progress-bar" id="myBar"></div>
+</div>
+<script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+    }
+</script>
 <div class="main">
     <h3> Some Activities That You Can't Miss: </h3>
     <h4>Walk Around The Boboli Garden</h4>
